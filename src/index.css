@@ -1,5 +1,6 @@
 :root {
   --text: rgb(236, 242, 244);
+  --background: rgb(43, 23, 55);
   --color1: rgb(39, 33, 79);
   --color2: rgb(76, 23, 90);
   --color3: rgb(134, 59, 135);
@@ -17,5 +18,5 @@
 
 body {
   padding: 0px 40px;
-  background-color: var(--color1);
+  background-color: var(--background);
 }

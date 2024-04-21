@@ -7,7 +7,7 @@ export const Welcome = () => {
   const [technology, setTechnology] = useState("");
 
   useEffect(() => {
-    let index = 0;
+    let index = Math.floor(Math.random() * 4);
     let charIndex = 0;
     let currentWord = words[index];
 
@@ -37,14 +37,26 @@ export const Welcome = () => {
   }, []);
 
   return (
-    <header className="Header">
-      <h1>
-        HI, I'M <b>RAFAŁ</b>
-      </h1>
-      <h4>FRONT END DEVELOPER</h4>
-      <p>
-        USING TECHNOLOGY: <span>{technology}</span>
-      </p>
+    <header className="welcome">
+      <div className="welcomeText">
+        <h1>
+          HI, I'M <b>RAFAŁ</b>
+        </h1>
+        <h4>FRONT END DEVELOPER</h4>
+        <p>
+          USING TECHNOLOGY: <span>{technology}</span>
+        </p>
+      </div>
+      <div className="aboutMe">
+        <div className="dotBlock">
+          <div className="dot dot--red"></div>
+          <div className="dot dot--yellow"></div>
+          <div className="dot dot--green"></div>
+        </div>
+        <div className="aboutMeText">
+          <span>coś o mnie</span>
+        </div>
+      </div>
     </header>
   );
 };
