@@ -38,6 +38,7 @@ export const Welcome = () => {
 
   return (
     <header className="welcome">
+      <img src="/img/cloudSmoke.png" className="squereCloud" />
       <div className="welcomeText">
         <h1>
           HI, I'M <b>RAFAŁ</b>
