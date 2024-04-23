@@ -1,11 +1,12 @@
 import "./App.css";
 import { Welcome } from "./components/Welcome/Welcome";
+import Technology from "./components/Technology/Technology";
 
 function App() {
   return (
     <>
       <Welcome />
-      <section></section>
+      <Technology />
       <footer></footer>
     </>
   );

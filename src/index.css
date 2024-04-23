@@ -19,3 +19,11 @@
 body {
   background-color: var(--background);
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
