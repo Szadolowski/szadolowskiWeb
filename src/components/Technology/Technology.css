@@ -18,7 +18,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition-duration: 1s;
 
   box-shadow: 10px 11px 20px -10px rgba(0, 0, 0, 0.59);
   background: radial-gradient(circle, var(--color2) 0%, var(--color1) 100%);
+}
+
+.technology img {
+  height: 40px;
+  width: 40px;
+  transition-duration: 1s;
+}
+
+.technology:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.technology:hover img {
+  height: 120px;
+  width: 120px;
+}
+
+.technology h4 {
+  font-size: 15px;
+  margin: 5px 0 0 0;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+.technology:hover h4 {
+  font-size: 30px;
 }
