@@ -1,52 +1,58 @@
 .technologyBox {
+  font-family: "Montserrat";
+  text-align: left;
   padding: 0 20%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
 }
 
-.technology {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  border: 1px solid var(--color3);
-  border-radius: 50%;
+.grid1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.grid2 {
+  grid-area: 2 / 1 / 5 / 2;
+}
+.grid3 {
+  grid-area: 2 / 2 / 5 / 3;
+}
 
+.technologyBox ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.technologyBox img {
+  height: 40px;
+  width: 40px;
+}
+
+.technologyBox h3 {
+  cursor: pointer;
+  text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.2);
+}
+
+.technologyInfo {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition-duration: 1s;
-
-  box-shadow: 10px 11px 20px -10px rgba(0, 0, 0, 0.59);
-  background: radial-gradient(circle, var(--color2) 0%, var(--color1) 100%);
-}
-
-.technology img {
-  height: 40px;
-  width: 40px;
-  transition-duration: 1s;
-}
-
-.technology:hover {
-  width: 300px;
-  height: 300px;
-}
-
-.technology:hover img {
-  height: 120px;
-  width: 120px;
-}
-
-.technology h4 {
-  font-size: 15px;
-  margin: 5px 0 0 0;
+  padding: 200px 100px;
   text-align: center;
-  transition-duration: 1s;
+  border: solid 2px var(--color2);
+  border-radius: 50px;
+  height: 450px;
+  width: 500px;
+  background-color: var(--color0);
+  box-sizing: border-box;
 }
 
-.technology:hover h4 {
-  font-size: 30px;
+.technologyInfo img {
+  height: 100px;
+  width: 100px;
+  margin: 0;
 }

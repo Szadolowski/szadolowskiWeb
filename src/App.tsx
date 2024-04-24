@@ -7,7 +7,7 @@ function App() {
     <>
       <Welcome />
       <Technology />
-      <footer></footer>
+      <footer style={{ height: 200 }}></footer>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import "./Welcome.css";
 
 const words = ["REACT.JS", "JAVASCRIPT", "TYPESCRIPT", "CSS", "GIT"];
@@ -38,16 +39,32 @@ export const Welcome = () => {
 
   return (
     <header className="welcome">
-      <img src="/img/cloudSmoke.png" className="squereCloud" />
-      <div className="welcomeText">
-        <h1>
-          HI, I'M <b>RAFAŁ</b>
-        </h1>
-        <h4>FRONT END DEVELOPER</h4>
-        <p>
-          USING TECHNOLOGY: <span>{technology}</span>
-        </p>
-      </div>
+      <AnimatePresence>
+        <motion.img
+          initial={{ x: -400, rotate: 60 }}
+          animate={{ x: 0, rotate: 90 }}
+          transition={{ duration: 1.3, ease: "backOut" }}
+          src="/img/cloudSmoke.png"
+          className="squereCloud"
+        />
+      </AnimatePresence>
+      <AnimatePresence>
+        <motion.div
+          key={"text"}
+          initial={{ opacity: 0, y: -400, x: -800 }}
+          animate={{ opacity: [0.1, 0.1, 0.1, 0.5, 1], y: 0, x: 0 }}
+          transition={{ duration: 1.1 }}
+          className="welcomeText"
+        >
+          <h1>
+            HI, I'M <b>RAFAŁ</b>
+          </h1>
+          <h4>FRONT END DEVELOPER</h4>
+          <p>
+            USING TECHNOLOGY: <span>{technology}</span>
+          </p>
+        </motion.div>
+      </AnimatePresence>
       <div className="aboutMe">
         <div className="dotBlock">
           <div className="dot dot--red"></div>

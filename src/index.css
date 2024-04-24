@@ -1,10 +1,11 @@
 :root {
   --text: rgb(236, 242, 244);
-  --background: rgb(43, 23, 55);
-  --color1: rgb(39, 33, 79);
-  --color2: rgb(76, 23, 90);
-  --color3: rgb(134, 59, 135);
-  --color4: rgb(154, 82, 163);
+  --background: #2b1737;
+  --color0: #321a41;
+  --color1: #542d6a;
+  --color2: #5b3174;
+  --color3: #8949ae;
+  --color4: #a457d0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
