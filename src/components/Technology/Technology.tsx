@@ -132,12 +132,12 @@ export const Technology = () => {
         <AnimatePresence>
           {(html && (
             <motion.div
-              key={"html"}
               className="technologyInfo"
-              initial={{ opacity: 0, x: 300 }}
+              initial={{ opacity: 0, x: 200, rotate: -5 }}
               animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-              exit={{ opacity: 0, x: 300 }}
+              exit={{ opacity: 0, x: 200 }}
               transition={{ duration: 1 }}
+              key={"html"}
             >
               <img src="html.svg" alt="html/svg" />
               <h3>HTML</h3>
@@ -151,9 +151,9 @@ export const Technology = () => {
             (css && (
               <motion.div
                 className="technologyInfo"
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0, x: 200, rotate: -5 }}
                 animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-                exit={{ opacity: 0, x: 300 }}
+                exit={{ opacity: 0, x: 200 }}
                 transition={{ duration: 1 }}
                 key={"css"}
               >
@@ -170,9 +170,9 @@ export const Technology = () => {
             (js && (
               <motion.div
                 className="technologyInfo"
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0, x: 200, rotate: -5 }}
                 animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-                exit={{ opacity: 0, x: 300 }}
+                exit={{ opacity: 0, x: 200 }}
                 transition={{ duration: 1 }}
                 key={"js"}
               >
@@ -189,9 +189,9 @@ export const Technology = () => {
             (react && (
               <motion.div
                 className="technologyInfo"
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0, x: 200, rotate: -5 }}
                 animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-                exit={{ opacity: 0, x: 300 }}
+                exit={{ opacity: 0, x: 200 }}
                 transition={{ duration: 1 }}
                 key={"react"}
               >
@@ -209,9 +209,9 @@ export const Technology = () => {
             (fm && (
               <motion.div
                 className="technologyInfo"
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0, x: 200, rotate: -5 }}
                 animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-                exit={{ opacity: 0, x: 300 }}
+                exit={{ opacity: 0, x: 200 }}
                 transition={{ duration: 1 }}
                 key={"fm"}
               >
@@ -228,9 +228,9 @@ export const Technology = () => {
             (ts && (
               <motion.div
                 className="technologyInfo"
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0, x: 200, rotate: -5 }}
                 animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-                exit={{ opacity: 0, x: 300 }}
+                exit={{ opacity: 0, x: 200 }}
                 transition={{ duration: 1 }}
                 key={"ts"}
               >
@@ -250,9 +250,9 @@ export const Technology = () => {
             (git && (
               <motion.div
                 className="technologyInfo"
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0, x: 200, rotate: -5 }}
                 animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-                exit={{ opacity: 0, x: 300 }}
+                exit={{ opacity: 0, x: 200 }}
                 transition={{ duration: 1 }}
                 key={"git"}
               >
@@ -269,9 +269,9 @@ export const Technology = () => {
             (vsc && (
               <motion.div
                 className="technologyInfo"
-                initial={{ opacity: 0, x: 300 }}
+                initial={{ opacity: 0, x: 200, rotate: -5 }}
                 animate={{ opacity: [0, 0.5, 1], x: 0, rotate: 5 }}
-                exit={{ opacity: 0, x: 300 }}
+                exit={{ opacity: 0, x: 200 }}
                 transition={{ duration: 1 }}
                 key={"vsc"}
               >

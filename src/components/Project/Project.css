@@ -1,0 +1,48 @@
+.project {
+  font-family: "Montserrat";
+  margin-top: 200px;
+  margin-bottom: 50px;
+  height: 1500px;
+}
+
+.projectTitle {
+  text-align: center;
+  width: 100%;
+}
+
+.projectTitle h2 {
+  font-size: 35px;
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 50px;
+  height: 200px;
+}
+
+.projectElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--color1);
+  border-radius: 10px;
+  padding: 10px 2%;
+  background-color: var(--color0);
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.projectElement span {
+  width: 50%;
+  text-align: center;
+  font-size: 12px;
+  text-wrap: wrap;
+}
+
+.projectElement img {
+  height: 250px;
+}

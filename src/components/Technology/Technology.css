@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.technologyBox h2 {
+  font-size: 35px;
+}
+
 .grid1 {
   grid-area: 1 / 1 / 2 / 3;
 }
