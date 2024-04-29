@@ -41,6 +41,7 @@ export const Welcome = () => {
     <header className="welcome">
       <AnimatePresence>
         <motion.img
+          style={{ position: "absolute" }}
           initial={{ x: -400, rotate: 60 }}
           animate={{ x: 0, rotate: 90 }}
           transition={{ duration: 1.3, ease: "backOut" }}

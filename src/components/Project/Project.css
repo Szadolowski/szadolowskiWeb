@@ -41,8 +41,14 @@
   text-align: center;
   font-size: 12px;
   text-wrap: wrap;
+  margin-top: 10px;
 }
 
 .projectElement img {
   height: 250px;
+}
+
+.projectElement h5,
+h4 {
+  margin: 15px 0 0 0;
 }
