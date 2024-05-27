@@ -73,7 +73,18 @@ export const Welcome = () => {
           <div className="dot dot--green"></div>
         </div>
         <div className="aboutMeText">
-          <span>coś o mnie</span>
+          <span>
+            My name is Rafał Curzydło, and I am a front-end developer with a
+            passion for creating modern and efficient user interfaces. I
+            specialize in technologies such as HTML, CSS, JavaScript, React.js,
+            and TypeScript. I have experience in building designs and web
+            applications for non-commercial projects as well as school projects.
+            My soft skills include a quick learning ability, communication
+            skills, teamwork, and conflict resolution. I am determined in
+            solving technical problems and constantly strive for
+            self-improvement. My interests include programming, computer
+            networks, graphics, technology, design, and automotive.
+          </span>
         </div>
       </div>
     </header>
